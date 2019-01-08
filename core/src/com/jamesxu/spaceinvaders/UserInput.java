@@ -1,10 +1,15 @@
 package com.jamesxu.spaceinvaders;
 
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 
 public class UserInput implements InputProcessor {
     @Override
     public boolean keyDown(int keycode) {
+        switch (keycode) {
+            case Input.Keys.LEFT:
+
+        }
         return false;
     }
 
