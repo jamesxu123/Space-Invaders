@@ -9,7 +9,7 @@ public class DesktopLauncher {
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setWindowedMode(800, 600);
         config.setHdpiMode(Lwjgl3ApplicationConfiguration.HdpiMode.Logical);
-        config.setIdleFPS(15);
+        config.setIdleFPS(30);
         config.setResizable(false);
         new Lwjgl3Application(new SpaceInvaders(), config);
     }

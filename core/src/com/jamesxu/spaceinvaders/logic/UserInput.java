@@ -1,16 +1,25 @@
 package com.jamesxu.spaceinvaders.logic;
 
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
+import com.badlogic.gdx.scenes.scene2d.Group;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 
 public class UserInput implements InputProcessor {
     private Ship userShip;
+    private Group bullets;
 
-    public UserInput(Ship userShip) {
+    public UserInput(Ship userShip, Group bullets) {
         this.userShip = userShip;
+        this.bullets = bullets;
     }
 
     @Override
     public boolean keyDown(int keycode) {
+        switch (keycode) {
+            case Input.Keys.SPACE:
+                userShip.fire(bullets);
+        }
         return false;
     }
 
