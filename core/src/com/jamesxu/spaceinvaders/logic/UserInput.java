@@ -1,15 +1,16 @@
-package com.jamesxu.spaceinvaders;
+package com.jamesxu.spaceinvaders.logic;
 
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 
 public class UserInput implements InputProcessor {
+    private Ship userShip;
+
+    public UserInput(Ship userShip) {
+        this.userShip = userShip;
+    }
+
     @Override
     public boolean keyDown(int keycode) {
-        switch (keycode) {
-            case Input.Keys.LEFT:
-
-        }
         return false;
     }
 
