@@ -17,6 +17,11 @@ public class Ship extends Actor {
     }
 
     public void render(SpriteBatch batch) {
+        for (Bullet b : bullets) {
+            float x = b.getX();
+            float y = b.getY();
+
+        }
         super.render(batch, 50, 50);
     }
 }

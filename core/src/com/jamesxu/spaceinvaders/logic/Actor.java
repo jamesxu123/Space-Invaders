@@ -23,6 +23,14 @@ public class Actor {
         return y;
     }
 
+    public void setX(float x) {
+        this.x = x;
+    }
+
+    public void setY(float y) {
+        this.y = y;
+    }
+
     public void moveUp(float speed) {
         this.y -= speed;
     }
